@@ -1,25 +1,78 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { Component } from 'react';
+import {Card, Jumbotron} from 'react-bootstrap';
+import Navbar from './components/Navbar.js';
+import Footer from './components/Footer.js';
+
 
 function App() {
+
+
+
+
+const cardInfo = [
+  {name: "", image: "https://i.imgur.com/deC0rGi.jpeg"
+  , about: ""},
+  {name: "", image: "https://i.imgur.com/dvKaBqN.jpeg", about: ""},
+  {name: "", image: "https://i.imgur.com/CKYs3aX.jpeg", about: ""},
+  {name: "", image: "https://i.imgur.com/P80thrH.jpeg", about: ""},
+
+  {name: "", image: "https://i.imgur.com/G3PkgLo.jpeg", about: ""},
+  {name: "", image: "https://i.imgur.com/9CrEpe7.jpeg", about: ""},
+  {name: "", image: "https://i.imgur.com/eFUfSHm.jpeg", about: ""},
+  {name: "", image: "https://i.imgur.com/rzgi0bN.jpeg", about: ""},
+  {name: "", image:"https://i.imgur.com/7Sr3W37.jpeg", about: ""},
+  {name: "", image: "https://i.imgur.com/YvLLpYo.jpeg", about: ""},
+  {name: "", image: "https://i.imgur.com/ua7buJf.jpeg", about: ""},
+  {name: "", image: "https://i.imgur.com/QSnQ2F5.jpeg", about: ""},
+  {name: "", image: "https://i.imgur.com/JSFCb7s.jpeg", about: ""},
+  {name: "", image: "https://i.imgur.com/PL8gCmh.jpeg", about: ""},
+  {name: "", image: "https://i.imgur.com/iDYsPJ7.jpeg", about: ""}
+
+
+
+
+
+
+
+];
+
+const renderCard = (card, index) => {
+  return(
+    <Card style={{ width: '18rem' }} key={index} className="box">
+  <Card.Img variant="top" src="holder.js/100px180" src={card.image} />
+  <Card.Body>
+    <Card.Title>{card.name}</Card.Title>
+
+  </Card.Body>
+  </Card>
+
+  )
+}
+
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="container"> <Navbar />
+  <div className="cont">
+  <img src="https://i.imgur.com/BPZ7RAe.png" />
+  <div className="caro">
+
+
+     {cardInfo.map(renderCard)}
+       </div>
+       < Footer />
+       </div>
+
+</div>
+
+
+
   );
 }
+
 
 export default App;
