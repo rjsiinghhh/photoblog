@@ -56,7 +56,7 @@ const renderCard = (card, index) => {
 
 
   return (
-    <div className="container"> <Navbar />
+    <div className="container"> 
   <div className="cont">
   <img src="https://i.imgur.com/BPZ7RAe.png" />
   <div className="caro">
