@@ -56,19 +56,18 @@ const renderCard = (card, index) => {
 
 
   return (
-    <div className="container"> 
-  <div className="cont">
-  <img src="https://i.imgur.com/BPZ7RAe.png" />
-  <div className="caro">
+    <div className="logo">
 
+  <img src="https://i.imgur.com/BPZ7RAe.png" />
+
+  <div className="container">
 
      {cardInfo.map(renderCard)}
-       </div>
-       < Footer />
-       </div>
+
 
 </div>
 
+</div>
 
 
   );
