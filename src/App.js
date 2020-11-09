@@ -5,52 +5,10 @@ import React, { Component } from 'react';
 import {Card, Jumbotron} from 'react-bootstrap';
 import Navbar from './components/Navbar.js';
 import Footer from './components/Footer.js';
+import Carousel from 'react-bootstrap/Carousel'
 
 
 function App() {
-
-
-
-
-const cardInfo = [
-  {name: "", image: "https://i.imgur.com/deC0rGi.jpeg"
-  , about: ""},
-  {name: "", image: "https://i.imgur.com/dvKaBqN.jpeg", about: ""},
-  {name: "", image: "https://i.imgur.com/CKYs3aX.jpeg", about: ""},
-  {name: "", image: "https://i.imgur.com/P80thrH.jpeg", about: ""},
-
-  {name: "", image: "https://i.imgur.com/G3PkgLo.jpeg", about: ""},
-  {name: "", image: "https://i.imgur.com/9CrEpe7.jpeg", about: ""},
-  {name: "", image: "https://i.imgur.com/eFUfSHm.jpeg", about: ""},
-  {name: "", image: "https://i.imgur.com/rzgi0bN.jpeg", about: ""},
-  {name: "", image:"https://i.imgur.com/7Sr3W37.jpeg", about: ""},
-  {name: "", image: "https://i.imgur.com/YvLLpYo.jpeg", about: ""},
-  {name: "", image: "https://i.imgur.com/ua7buJf.jpeg", about: ""},
-  {name: "", image: "https://i.imgur.com/QSnQ2F5.jpeg", about: ""},
-  {name: "", image: "https://i.imgur.com/JSFCb7s.jpeg", about: ""},
-  {name: "", image: "https://i.imgur.com/PL8gCmh.jpeg", about: ""},
-  {name: "", image: "https://i.imgur.com/iDYsPJ7.jpeg", about: ""}
-
-
-
-
-
-
-
-];
-
-const renderCard = (card, index) => {
-  return(
-    <Card style={{ width: '18rem' }} key={index} className="box">
-  <Card.Img variant="top" src="holder.js/100px180" src={card.image} />
-  <Card.Body>
-    <Card.Title>{card.name}</Card.Title>
-
-  </Card.Body>
-  </Card>
-
-  )
-}
 
 
 
@@ -62,11 +20,154 @@ const renderCard = (card, index) => {
 
   <div className="container">
 
-     {cardInfo.map(renderCard)}
+  <Carousel>
+    <Carousel.Item interval={1000}>
+      <img
+        className="d-block w-100"
+        src="https://i.imgur.com/dvKaBqN.jpeg"
+        alt="First slide"
+      />
+      <Carousel.Caption>
+      </Carousel.Caption>
+    </Carousel.Item>
+    <Carousel.Item interval={500}>
+      <img
+        className="d-block w-100"
+        src="https://i.imgur.com/CKYs3aX.jpeg"
+        alt="Third slide"
+      />
+
+    </Carousel.Item>
+    <Carousel.Item>
+      <img
+        className="d-block w-100"
+        src="https://i.imgur.com/P80thrH.jpeg"
+        alt="Third slide"
+      />
+
+    </Carousel.Item>
+
+    <Carousel.Item interval={1000}>
+      <img
+        className="d-block w-100"
+        src="https://i.imgur.com/G3PkgLo.jpeg"
+        alt="First slide"
+      />
+      <Carousel.Caption>
+      </Carousel.Caption>
+    </Carousel.Item>
+    <Carousel.Item interval={500}>
+      <img
+        className="d-block w-100"
+        src="https://i.imgur.com/9CrEpe7.jpeg"
+        alt="Third slide"
+      />
+
+    </Carousel.Item>
+  
+
+
+
+
+    <Carousel.Item interval={1000}>
+      <img
+        className="d-block w-100"
+        src="https://i.imgur.com/eFUfSHm.jpeg"
+        alt="First slide"
+      />
+      <Carousel.Caption>
+      </Carousel.Caption>
+    </Carousel.Item>
+    <Carousel.Item interval={500}>
+      <img
+        className="d-block w-100"
+        src="https://i.imgur.com/rzgi0bN.jpeg"
+        alt="Third slide"
+      />
+
+    </Carousel.Item>
+    <Carousel.Item>
+      <img
+        className="d-block w-100"
+        src="https://i.imgur.com/7Sr3W37.jpeg"
+        alt="Third slide"
+      />
+
+    </Carousel.Item>
+
+
+
+
+    <Carousel.Item interval={1000}>
+      <img
+        className="d-block w-100"
+        src="https://i.imgur.com/YvLLpYo.jpeg"
+        alt="First slide"
+      />
+      <Carousel.Caption>
+      </Carousel.Caption>
+    </Carousel.Item>
+    <Carousel.Item interval={500}>
+      <img
+        className="d-block w-100"
+        src="https://i.imgur.com/ua7buJf.jpeg"
+        alt="Third slide"
+      />
+
+    </Carousel.Item>
+    <Carousel.Item>
+      <img
+        className="d-block w-100"
+        src="https://i.imgur.com/QSnQ2F5.jpeg"
+        alt="Third slide"
+      />
+
+    </Carousel.Item>
+
+
+
+
+
+
+
+
+
+
+        <Carousel.Item interval={1000}>
+          <img
+            className="d-block w-100"
+            src="https://i.imgur.com/JSFCb7s.jpeg"
+            alt="First slide"
+          />
+          <Carousel.Caption>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item interval={500}>
+          <img
+            className="d-block w-100"
+            src="https://i.imgur.com/PL8gCmh.jpeg"
+            alt="Third slide"
+          />
+
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="https://i.imgur.com/iDYsPJ7.jpeg"
+            alt="Third slide"
+          />
+
+        </Carousel.Item>
+
+
+
+
+  </Carousel>
+
 
 
 </div>
-
+< Footer />
 </div>
 
 
